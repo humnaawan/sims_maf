@@ -964,8 +964,8 @@ class DefaultDitherStacker(HexDitherPerNightStacker):
         super(DefaultDitherStacker, self).__init__(raCol=raCol, decCol=decCol, degrees=degrees,
                                                    fieldIdCol=fieldIdCol, nightCol=nightCol,
                                                    maxDither=maxDither, inHex=inHex)
-        self.addedRA = 'ditheredRA'
-        self.addedDec = 'ditheredDec'
+        self.addedRA = 'default_ditheredRA'
+        self.addedDec = 'default_ditheredDec'
         # Values required for framework operation: this specifies the names of the new columns.
         self.colsAdded = [self.addedRA, self.addedDec]
 
